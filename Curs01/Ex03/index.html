@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <title>Picture & srcset</title>
 
- 
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="images">
+      <picture>
+        <source media="(max-width: 600px)" srcset="images/w300.png" />
 
-  <title>Picture & srcset</title>
-</head>
-<body>
+        <source media="(max-width: 768px)" srcset="images/w500.png" />
 
-</body>
+        <source media="(max-width: 992px)" srcset="images/w900.png" />
+
+        <img src="images/w1900.png" alt="image" />
+      </picture>
+    </div>
+  </body>
 </html>
-

@@ -38,10 +38,22 @@ body {
   display: none;
 }
 
+.h2 {
+  display: none;
+}
+
+.h3 {
+  display: block;
+}
+
 @media (max-width: 576px) {
   .box-2,
   .box-1 {
     display: none;
+  }
+
+  body {
+    padding: 15px;
   }
 }
 
@@ -67,6 +79,11 @@ body {
   .box-4 {
     color: black;
   }
+
+  .box-2 {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -78,5 +95,29 @@ body {
 @media (min-width: 600px) and (max-width: 1200px) {
   .heading {
     display: block;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+  .h2 {
+    display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .h3 {
+    display: none;
+  }
+}
+
+@media (min-width: 1000px) {
+  .h3 {
+    color: red;
+  }
+}
+
+@media (min-width: 1200px) {
+  .h3 {
+    display: none;
   }
 }
