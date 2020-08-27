@@ -3,3 +3,8 @@
     text-align: center;
   }
 }
+
+.images picture {
+  width: 100%;
+  text-align: left;
+}
