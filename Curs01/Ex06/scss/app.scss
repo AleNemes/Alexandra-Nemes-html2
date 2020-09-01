@@ -23,3 +23,27 @@
   padding: 10px;
   margin: 0 auto;
 }
+
+// Creeaza in mark-up trei elemente div cu
+// clasa square, fiecare avand una din
+// clasele: square-magenta, square-peru
+// si square-purple. Folosind mixinurile
+// create, coloreaza fiecare patrat
+// conform clasei sale de CSS
+.square-magenta {
+  @include square;
+
+  @include box-bg(magenta);
+}
+
+.square-peru {
+  @include square;
+
+  @include box-bg(peru);
+}
+
+.square-purple {
+  @include square;
+
+  @include box-bg(purple);
+}
