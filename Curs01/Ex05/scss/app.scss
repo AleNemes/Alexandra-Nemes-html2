@@ -1,5 +1,9 @@
 $brand-main: red;
 $brand-secondary: green;
+$hover-color: magenta;
+$active-color: pink;
+$visited-color: lightcoral;
+// 09.Creeaza trei variabile noi pentru culorile: magenta, lightcoral si pink
 
 // Pentru ancorele din lista neordonata elimina linia
 // si coloreaza-le rosii atunci cand mouseul face hover
@@ -64,6 +68,39 @@ ul {
     .reverse & {
       width: 100%;
       padding: 10px 20px;
+    }
+  }
+}
+
+// 10. Foloseste-le pentru starile ancorelor din listele ordonate:
+// a: hover: magenta
+// b: active: pink
+// c: visited: lightcoral
+ol {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: $hover-color;
+    }
+
+    &:active {
+      color: $active-color;
+    }
+
+    &:visited {
+      color: $visited-color;
+    }
+  }
+}
+
+// 11. Folosind inspectorul aplica o clasa numita all-visited
+// pe lista ordonata. Cand aceasta clasa este pe element,
+// toate ancorele din acesta sa fie taiate (line-through)
+ol {
+  a {
+    .all-visited & {
+      text-decoration: line-through;
     }
   }
 }
