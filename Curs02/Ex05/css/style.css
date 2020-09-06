@@ -30,4 +30,13 @@
   border-bottom: 10px solid transparent;
 }
 
+.button-left::after {
+  width: 0;
+  height: 0;
+  content: "";
+  border-top: 10px solid transparent;
+  border-left: 10px solid black;
+  border-bottom: 10px solid transparent;
+}
+
 /*# sourceMappingURL=style.css.map */

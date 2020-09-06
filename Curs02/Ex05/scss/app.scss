@@ -49,3 +49,23 @@
     @include btn-dir('left');
   }
 }
+
+// Pct 3.Creaza  un mixin care sa poata fi aplicat pe
+// butoane pentru a genera sageti de tip next/previous/up/down
+@mixin btn-dir($direction: 'right') {
+  width: 0;
+  height: 0;
+  content: '';
+
+  @if $direction == 'right' {
+    border-top: 10px solid transparent;
+    border-left: 10px solid black;
+    border-bottom: 10px solid transparent;
+  }
+}
+
+.button-left {
+  &::after {
+    @include btn-dir('right');
+  }
+}

@@ -31,3 +31,35 @@
     height: $width;
   }
 }
+
+// Pct 4. La final, genereaza folosind through, pentru ultimul rand de elemente,
+// clase de felul box-10 (box-20).
+// Elementele din pozitii impare trebuie sa aibe fundalul gri.
+@for $i from 1 through 5 {
+  .box-#{$i}0 {
+    $width: 150px + ($i * 2);
+    width: $width;
+    height: $width;
+  }
+}
+
+@mixin boxes($condition) {
+  $color: if($condition, grey);
+  background-color: $color;
+
+  @if $i %1 == 1 {
+    background-color: grey;
+  }
+
+  @if $i %2 == 0 {
+    background-color: transparent;
+  }
+}
+
+.box-10 {
+  @include boxes(true);
+}
+
+.box-20 {
+  @include boxes(false);
+}
