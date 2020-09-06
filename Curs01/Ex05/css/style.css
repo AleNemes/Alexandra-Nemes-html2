@@ -43,10 +43,9 @@ ol a:hover {
 ol a:active {
   color: pink;
 }
-ol a:visited {
+.visited ol a {
   color: lightcoral;
 }
-
 .all-visited ol a {
   text-decoration: line-through;
 }

@@ -88,17 +88,13 @@ ol {
       color: $active-color;
     }
 
-    &:visited {
+    .visited & {
       color: $visited-color;
     }
-  }
-}
 
-// 11. Folosind inspectorul aplica o clasa numita all-visited
-// pe lista ordonata. Cand aceasta clasa este pe element,
-// toate ancorele din acesta sa fie taiate (line-through)
-ol {
-  a {
+    // 11. Folosind inspectorul aplica o clasa numita all-visited
+    // pe lista ordonata. Cand aceasta clasa este pe element,
+    // toate ancorele din acesta sa fie taiate (line-through)
     .all-visited & {
       text-decoration: line-through;
     }
