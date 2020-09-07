@@ -27,7 +27,16 @@
   }
 }
 
-// In mod similar folosind through, genereaza clase
+//Pct 3 In mod similar folosind through, genereaza clase
 // pentru randul urmator de elemente, astfel incat
 // elementele din pozitii pare sa aibe fundalul gri
 // iar cele din pozitii impare sa aibe bordura dotted
+@for $i from 1 through 10 {
+  .box-#{$i} {
+    @if $i % 2 == 0 {
+      background-color: grey;
+    } @else {
+      border: 2px dotted black;
+    }
+  }
+}
