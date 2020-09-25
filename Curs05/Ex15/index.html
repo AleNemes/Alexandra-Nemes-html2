@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+  <title>Product form</title>
+
+  <link
+    rel="stylesheet"
+    href="css/style.css"
+  >
+</head>
+<body>
+  <main class="container">
+    <header class="row">
+      <div class="col">
+        <h1>Formular produs</h1>
+
+        <h3>Produs</h3>
+      </div>
+    </header>
+    <!-- ./ header  -->
+
+    <form action="">
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="form-group mb-2">
+            <label for="product-image">Imagine principala*:</label>
+            <input
+              type="file"
+              class="form-control-file"
+              name="product-image"
+              id="product-image"
+              required
+            >
+          </div>
+          <!-- ./ form-group  -->
+
+          <div class="input-group mt-5">
+            <div class="input-group-prepend">
+              <label
+                for="category"
+                class="input-group-text"
+              >Categorie*</label>
+            </div>
+
+            <select
+              name="category"
+              id="category"
+              class="form-control"
+              required
+            >
+              <option value="">--categorie--</option>
+            </select>
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <label
+                for="brand"
+                class="input-group-text"
+              >Brand*</label>
+            </div>
+
+            <select
+              name="brand"
+              id="brand"
+              class="form-control"
+              required
+            >
+              <option value="">--brand--</option>
+            </select>
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mt-2">
+            <div class="input-group-prepend">
+              <label
+                for="provider"
+                class="input-group-text"
+              >Furnizor*</label>
+            </div>
+
+            <select
+              name="provider"
+              id="provider"
+              class="form-control"
+              required
+            >
+              <option value="">--furnizor--</option>
+            </select>
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+        <!-- ./ col 1  -->
+
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="product-name"
+                class="input-group-text"
+              >Numele produsului*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="product-name"
+              id="product-name"
+              placeholder="Numele produsului*"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="description-long"
+                class="input-group-text"
+              >Descriere lunga*</label>
+            </div>
+
+            <textarea
+              name="description-long"
+              id="description-long"
+              cols="30"
+              rows="8"
+              class="form-control"
+              placeholder="Descriere lunga*"
+              required
+            ></textarea>
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="description-short"
+                class="input-group-text"
+              >Descriere scurta*</label>
+            </div>
+
+            <textarea
+              name="description-short"
+              id="description-short"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Descriere scurta*"
+              required
+            ></textarea>
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+        <!-- ./ col 2  -->
+      </section>
+      <!-- ./ row 1  -->
+
+      <div class="row">
+        <div class="col">
+          <h2>Pret</h2>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="price-offer"
+              id="price-offer"
+            >
+
+            <label for="price-offer">Afiseaza oferta de produs</label>
+          </div>
+        </div>
+        <!-- ./ form-check  -->
+      </section>
+      <!-- ./ row  -->
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="price"
+                class="input-group-text"
+              >Pret*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="price"
+              id="price"
+              placeholder="Pret*"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+        <!-- ./ col  -->
+
+        <div class="col-12 col-md-6">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              name="sales"
+              id="sales"
+            >
+
+            <label for="sales">Afiseaza pret redus</label>
+          </div>
+          <!-- ./ form-check  -->
+
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label
+                for=""
+                class="input-group-text"
+              >Pret redus</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="discount"
+              id="discount"
+              placeholder="Pret redus"
+            >
+          </div>
+        </div>
+        <!-- ./ col  -->
+      </section>
+      <!-- ./ row  -->
+
+      <div class="row">
+        <div class="col">
+          <h2>Brand (optional)</h2>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-md-6 mb-2">
+          <div class="custom-control custom-switch ">
+            <input
+              type="checkbox"
+              name="brand-toggle"
+              id="brand-toggle"
+              class="custom-control-input"
+            >
+
+            <label
+              for="brand-toggle"
+              class="custom-control-label btn p-0"
+            >Adauga brand</label>
+          </div>
+        </div>
+      </section>
+      <!-- ./ row custom-switch  -->
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="brand-name"
+                class="input-group-text"
+              >Nume Brand</label>
+            </div>
+
+            <input
+              type="text"
+              class="form-control"
+              name="brand-name"
+              id="brand-name"
+              placeholder="Nume Brand"
+            >
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for=""
+                class="input-group-text"
+              >Descriere brand</label>
+            </div>
+
+            <textarea
+              name="brand-description"
+              id="brand-description"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Descriere brand"
+            ></textarea>
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+        <!-- ./ col  -->
+
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="brand-address"
+                class="input-group-text"
+              >Adresa Brand</label>
+            </div>
+
+            <textarea
+              name="brand-address"
+              id="brand-address"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Adresa brand"
+            ></textarea>
+          </div>
+        </div>
+        <!-- ./ col  -->
+      </section>
+      <!-- ./ row  -->
+
+      <div class="row">
+        <div class="col">
+          <h2>Furnizor (optional)</h2>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="custom-control custom-switch ">
+            <input
+              type="checkbox"
+              name="provider-toggle"
+              id="provider-toggle"
+              class="custom-control-input"
+            >
+
+            <label
+              for="provider-toggle"
+              class="custom-control-label btn p0"
+            >Adauga furnizor</label>
+          </div>
+        </div>
+      </section>
+      <!-- ./ row  -->
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="provider-name"
+                class="input-group-text"
+              >Nume furnizor</label>
+            </div>
+
+            <input
+              type="text"
+              class="form-control"
+              name="provider-name"
+              id="provider-name"
+              placeholder="Nume furnizor"
+            >
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for=""
+                class="input-group-text"
+              >Descriere furnizor</label>
+            </div>
+
+            <textarea
+              name="provider-description"
+              id="provider-description"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Descriere furnizor"
+            ></textarea>
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+        <!-- ./ col  -->
+
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="provider-address"
+                class="input-group-text"
+              >Adresa furnizor</label>
+            </div>
+
+            <textarea
+              name="provider-address"
+              id="provider-address"
+              cols="30"
+              rows="4"
+              class="form-control"
+              placeholder="Adresa furnizor"
+            ></textarea>
+          </div>
+        </div>
+        <!-- ./ col  -->
+      </section>
+      <!-- ./ row  -->
+
+      <section class="row mt-5 mb-3 justify-content-center">
+        <div class="col-3">
+          <div
+            class="btn-group btn-block btn-group-sm"
+            role="group"
+          >
+            <button
+              type="submit"
+              class="btn btn-outline-danger mr-2"
+              value="reset"
+            >Reseteaza tot</button>
+
+            <button
+              type="submit"
+              class="btn btn-primary"
+            >Salveaza produs</button>
+          </div>
+        </div>
+      </section>
+    </form>
+  </main>
+</body>
+</html>

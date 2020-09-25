@@ -161,7 +161,240 @@
 
       <section class="row">
         <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="author-name"
+                class="input-group-text"
+              >Numele autorului:*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="author-name"
+              id="author-name"
+              required
+              placeholder="Numele autorului*"
+            >
+          </div>
+          <!-- ./ input-group  -->
 
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="author-surname"
+                class="input-group-text"
+              >Prenumele autorului:*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="author-surname"
+              id="author-surname"
+              placeholder="Prenumele autorului*"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="email"
+                class="input-group-text"
+              >Email:*</label>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Email*"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="website"
+                class="input-group-text"
+              >Website:*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="website"
+              id="webiste"
+              placeholder="Webiste"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col">
+          <h2>Ingrediente</h2>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for=""
+                class="input-group-text"
+              >Nume ingredient:*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="ingredient-name"
+              id="ingredient-name"
+              placeholder="Nume ingredient*"
+              required
+            >
+
+            <button class="btn btn-primary">Adauga</button>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6">
+          <h2>Lista ingrediente</h2>
+
+          <ul>
+            <li>10g ulei
+              <button
+                type="button"
+                class="btn btn-primary btn-sm mb-1"
+              >Editeaza</button>
+              <button
+                type="button"
+                class="btn btn-danger btn-sm mb-1"
+              >Sterge</button>
+            </li>
+
+            <li>200g ceapa
+              <button
+                type="button"
+                class="btn btn-primary btn-sm mb-1"
+              >Editeaza</button>
+              <button
+                type="button"
+                class="btn btn-danger btn-sm mb-1"
+              >Sterge</button>
+            </li>
+
+            <li>200g ardei gras
+              <button
+                type="button"
+                class="btn btn-primary btn-sm"
+              >Editeaza</button>
+              <button
+                type="button"
+                class="btn btn-danger btn-sm"
+              >Sterge</button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="row">
+        <div class="col">
+          <h2>Pasi</h2>
+        </div>
+      </div>
+
+      <section class="row">
+        <div class="col-12 col-md-6">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="title"
+                class="input-group-text"
+              >Titlu pas*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="title"
+              id="title"
+              placeholder="Titlu pas*"
+              required
+            >
+          </div>
+          <!-- ./input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="subtitle"
+                class="input-group-text"
+              >Subtitlu pas*</label>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="subtitle"
+              id="subtitle"
+              placeholder="Subtitlu pas*"
+              required
+            >
+          </div>
+          <!-- ./ input-group  -->
+
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <label
+                for="description"
+                class="input-group-text"
+              >Descriere pas*</label>
+            </div>
+
+            <textarea
+              name="description"
+              id="description"
+              cols="30"
+              rows="8"
+              class="form-control"
+              placeholder="Descriere pas*"
+              required
+            ></textarea>
+          </div>
+
+          <div class="btn-group float-right">
+            <button
+              type="button"
+              class="btn btn-outline-danger"
+            >Reseteaza</button>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+            >Adauga</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="row mt-5 justify-content-center">
+        <div class="col-3">
+          <div class="btn-group">
+            <button
+              type="button"
+              class="btn btn-outline-danger mr-2"
+            >Reseteaza tot</button>
+
+            <button
+              type="button"
+              class="btn btn-primary"
+            >Trimite reteta</button>
+          </div>
         </div>
       </section>
     </form>
