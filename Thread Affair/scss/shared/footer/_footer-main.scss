@@ -35,6 +35,16 @@
   }
 
   .footer-support {
+    @include media-breakpoint-up('md') {
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
     ul {
       width: 200px;
     }
@@ -51,6 +61,18 @@
   }
 
   .footer-contact {
+    @include media-breakpoint-up('md') {
+      margin-left: 130px;
+
+      a {
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+
     p {
       &:last-child {
         font-size: 14px;

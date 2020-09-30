@@ -3,6 +3,14 @@
   margin-bottom: 70px;
 
   .product-image-container {
+    @include media-breakpoint-up('md') {
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
     position: relative;
     margin-bottom: 30px;
 

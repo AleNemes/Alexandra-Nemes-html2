@@ -1,7 +1,64 @@
 .nav-primary {
+  @include media-breakpoint-up('md') {
+    display: inline-block;
+    text-align: center;
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      margin-right: 42px;
+      display: inline-block;
+    }
+
+    a {
+      font-size: 25px;
+      color: $gray-main;
+      text-transform: uppercase;
+      font-weight: 300;
+      padding: 12px;
+      border-radius: 30px;
+      transition: color 0.2s linear, background-color 0.2s linear;
+
+      &:hover {
+        text-decoration: none;
+        background-color: $brand-main;
+        color: $white;
+      }
+    }
+  }
+
   display: none;
 }
 
 .nav-secondary {
+  @include media-breakpoint-up('md') {
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+
+    ul {
+      display: inline-block;
+    }
+
+    li {
+      display: inline-block;
+      margin-right: 42px;
+    }
+
+    a {
+      color: $gray-main;
+      text-transform: uppercase;
+      font-size: 18px;
+      transition: color 0.2s linear;
+
+      &:hover {
+        text-decoration: none;
+        color: $brand-main;
+      }
+    }
+  }
+
   display: none;
 }
