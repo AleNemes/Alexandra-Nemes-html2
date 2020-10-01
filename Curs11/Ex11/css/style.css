@@ -18,7 +18,7 @@
 }
 
 .grid-item-4 {
-  background-color: lightsalmon
+  background-color: lightsalmon;
 }
 
 .grid-item-5 {
@@ -26,3 +26,22 @@
 }
 /* can't touch this 🔨 */
 
+/* Pct 1 Creaza un grid cu urmatoarele coloane 140px 500px 320px 25%
+Pct 2 Adauga si urmatoarele randuri 120px 80px 120px 120px  90px
+Pct 3 Intinde elementul 1 de la linia verticala 1 cu 2 celule
+folosind cuvantul span apoi de la linia orizontala 1 cu 2 celule folosind
+
+Pct 4 Intinde elementul 2 intre linia verticala 1 si linia
+verticala 4 apoi cu o celula de la linia orizontala 2 folosind o singura valoare
+
+Pct 5 Intinde elementul 4 intre linia verticala 1 si linia
+verticala 3, apoi de la linia orizontala -3 la -1
+
+Pct 6 Intinde elementul 5 de la linia verticala -2 cu o celula
+folosind o singura valoare apoi intre linia orizontala 1 si -1
+
+Pct 7 Pozitioneaza elementul 1 in coltul din stanga sus
+Pct 8 Aliniaza elementul 2 pe latura din stanga
+Pct 9 Aliniaza elementul 3 in coltul din dreapta jos
+Pct 10 Aliniaza elementul 4 centrat pe verticala si orizontala
+Pct 11 Aliniaza elementul 5 centrat pe orizontala si pe latura de jos  */
