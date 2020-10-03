@@ -1,6 +1,6 @@
 .nav-primary {
   @include media-breakpoint-up('md') {
-    display: inline-block;
+    display: block;
     text-align: center;
 
     ul {
@@ -34,7 +34,7 @@
 
 .nav-secondary {
   @include media-breakpoint-up('md') {
-    display: inline-block;
+    display: block;
     text-align: center;
     margin-top: 15px;
 
