@@ -65,20 +65,38 @@
     <!-- ./ header-contact  -->
 
     <div class="header-controls">
-      <form action="header-search">
-        <div class="search-form">
-          <button type="submit"><i class="fas fa-search icon"></i></button>
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="Search"
-          >
-        </div>
-      </form>
+      <div class="menu-nav">
+        <a
+          href=""
+          title="menu"
+          class="menu-bars"
+        ><i class="fas fa-bars"></i></a>
+
+
+        <form action="header-search">
+          <div class="search-form">
+
+            <input
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Search"
+            >
+            <button type="submit"><i class="fas fa-search icon"></i></button>
+          </div>
+        </form>
+      </div>
       <!-- ./ search-form  -->
 
-      <div class="user-control">
+      <div class="user-control cont">
+        <div>
+          <a
+            href=""
+            title="homepage"
+            class="logo"
+          >MONOCHROME</a>
+        </div>
+
         <ul>
           <li>
             <a
@@ -162,7 +180,15 @@
   <!-- ./ header  -->
 
   <main class="main">
+    <header class="banner-main">
+      <button type="submit">New in</button>
+    </header>
+
+
+
     <section class="catalog-preview">
+      <div class="border"></div>
+
       <h1>New Stuff</h1>
 
       <div class="catalog-tiles">
@@ -226,7 +252,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -256,7 +282,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -291,6 +317,8 @@
     <!-- ./ catalog-preview  -->
 
     <section class="catalog-preview">
+      <div class="border"></div>
+
       <h1>Most loved</h1>
 
       <div class="catalog-tiles">
@@ -354,7 +382,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -384,7 +412,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -418,7 +446,7 @@
     </section>
     <!-- ./ catalog-preview 2   -->
 
-    <section class="home-promo">
+    <section class="home-promo cont">
       <img
         class="img-promo"
         src="../img/oliver-pecker-HONJP8DyiSM-unsplash.png"
@@ -428,25 +456,28 @@
       <h2> <span>Watches for entrepreneurs</span> </h2>
 
       <p>
-        But I must explain to you how all this mistaken idea of <br>
-        denouncing pleasure and praising pain was born and I <br> will
-        give you a complete account of the system, and <br> expound the
-        actual teachings of the great explorer of <br> the truth, the
-        master-builder of human happiness. No <br> one rejects, dislikes,
+        But I must explain to you how all this mistaken idea of
+        denouncing pleasure and praising pain was born and I will
+        give you a complete account of the system, and expound the
+        actual teachings of the great explorer of the truth, the
+        master-builder of human happiness. No one rejects, dislikes,
         or avoids pleasure itself, because.
       </p> <br>
 
       <p>
-        But I must explain to you how all this mistaken idea of <br> denouncing
-        pleasure and praising pain was born and I <br> will give you a complete
-        account of the system, and <br> expound the actual teachings of the great
-        explorer of <br> the truth, the master-builder of human happiness. No <br> one
-        rejects, dislikes, or avoids pleasure itself, because.
+        <span>But I must explain to you how all this mistaken idea of <br> denouncing
+          pleasure and praising pain was born and I <br> will give you a complete
+          account of the system, and <br> expound the actual teachings of the great
+          explorer of <br> the truth, the master-builder of human happiness. No <br> one
+          rejects, dislikes, or avoids pleasure itself, because.
+        </span>
       </p>
     </section>
     <!-- ./home-promo  -->
 
     <section class="catalog-preview">
+      <div class="border"></div>
+
       <h1>Men`s</h1>
 
       <div class="catalog-tiles">
@@ -510,7 +541,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -540,7 +571,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -572,7 +603,7 @@
       </div>
       <!-- ./ catalog-tiles  -->
 
-      <div>
+      <div class="btn">
         <a
           href=""
           class="catalog-preview-cta"
@@ -582,6 +613,8 @@
     <!-- ./ catalog-preview 3   -->
 
     <section class="catalog-preview">
+      <div class="border"></div>
+
       <h1>Women`s</h1>
 
       <div class="catalog-tiles">
@@ -645,7 +678,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -675,7 +708,7 @@
         </article>
         <!-- ./ catalog-tile  -->
 
-        <article class="catalog-tile">
+        <article class="catalog-tile h-img">
           <a
             href=""
             class="image-container"
@@ -707,7 +740,7 @@
       </div>
       <!-- ./ catalog-tiles  -->
 
-      <div>
+      <div class="btn">
         <a
           href=""
           class="catalog-preview-cta"
@@ -719,96 +752,96 @@
   <!-- ./ main  -->
 
   <footer class="footer">
-    <div class="container">
-      <section class="footer-info">
-        <h3>How can we help?</h3>
+    <section class="footer-info">
+      <h3>How can we help?</h3>
 
-        <ul>
-          <li><a
-              href=""
-              title="call us"
-            >call us</a>
-          </li>
+      <ul>
+        <li><a
+            href=""
+            title="call us"
+          >call us</a>
+        </li>
 
-          <li><a
-              href="tel:+44 (0)10 2345 6789"
-              title="+44 (0)10 2345 6789"
-            >+44 (0)10 2345 6789</a>
-          </li>
+        <li><a
+            href="tel:+44 (0)10 2345 6789"
+            title="+44 (0)10 2345 6789"
+          >+44 (0)10 2345 6789</a>
+        </li>
 
-          <li><a
-              href=""
-              title="email"
-            >EMAIL CUSTOMER CARE</a>
-          </li>
+        <li><a
+            href=""
+            title="email"
+          >EMAIL CUSTOMER CARE</a>
+        </li>
 
-          <li><a
-              href=""
-              title="mobile version"
-            >see mobile version</a>
-          </li>
-        </ul>
+        <li><a
+            href=""
+            title="mobile version"
+          >see mobile version</a>
+        </li>
+      </ul>
 
-        <ul>
-          <li>
-            <a
-              href=""
-              title="advice"
-            >style&fit advice</a>
-          </li>
+      <ul>
+        <li>
+          <a
+            href=""
+            title="advice"
+          >style&fit advice</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="faqs"
-            >faqs</a>
-          </li>
+        <li>
+          <a
+            href=""
+            title="faqs"
+          >faqs</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="delivery"
-            >delivery</a>
-          </li>
+        <li>
+          <a
+            href=""
+            title="delivery"
+          >delivery</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="returns"
-            >exchagnes&returns</a>
-          </li>
-        </ul>
+        <li>
+          <a
+            href=""
+            title="returns"
+          >exchagnes&returns</a>
+        </li>
+      </ul>
 
-        <ul>
-          <li>
-            <a
-              href=""
-              title="about us"
-            >about us</a>
-          </li>
+      <ul>
+        <li>
+          <a
+            href=""
+            title="about us"
+          >about us</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="careers"
-            >careers</a>
-          </li>
+        <li>
+          <a
+            href=""
+            title="careers"
+          >careers</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="affiliates"
-            >affiliates</a>
-          </li>
+        <li>
+          <a
+            href=""
+            title="affiliates"
+          >affiliates</a>
+        </li>
 
-          <li>
-            <a
-              href=""
-              title="advertising"
-            >advertising</a>
-          </li>
-        </ul>
+        <li>
+          <a
+            href=""
+            title="advertising"
+          >advertising</a>
+        </li>
+      </ul>
 
+      <div class="terms">
         <ul>
           <li>
             <a
@@ -824,80 +857,77 @@
             >privacy&cookies</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="footer-subscribe">
-        <h3>Let`s connect!</h3>
+    <section class="footer-subscribe">
+      <h3>Let`s connect!</h3>
 
-        <form action="">
-          <p>Be the first to receive exclusives offers</p>
+      <form action="">
+        <p>Be the first to receive exclusives offers</p>
 
-          <p>sign up for our newsletter</p>
+        <p> <span>sign up for our newsletter</span></p>
 
-          <label for="email"></label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Email"
-          >
+        <label for="email"></label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Email"
+        >
 
-          <button type="submit">Submit</button>
+        <button type="submit">Submit</button>
 
-          <p>
-            I agree with <a
-              href=""
-              title="privacy"
-            >Privacy Policy</a>and i want to receive emails from Monochrome
-          </p>
-        </form>
+        <p class="privacy">
+          I agree with <a
+            href=""
+            title="privacy"
+          >Privacy Policy</a> and i want to receive <br> emails from Monochrome
+        </p>
+      </form>
 
-        <div class="footer-social">
-          <p>We are highly likeable</p>
+      <div class="footer-social">
+        <p>We are highly likeable</p>
 
-          <ul>
-            <li>
-              <a
-                href="http://www.youtube.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="youtube"
-              ><i class="fab fa-youtube"></i></a>
-            </li>
+        <ul>
+          <li>
+            <a
+              href="http://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="youtube"
+            ><i class="fab fa-youtube"></i></a>
+          </li>
 
-            <li>
-              <a
-                href="http://www.twiter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="twiter"
-              ><i class="fab fa-twitter"></i></a>
-            </li>
+          <li>
+            <a
+              href="http://www.twiter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="twiter"
+            ><i class="fab fa-twitter"></i></a>
+          </li>
 
-            <li>
-              <a
-                href="http://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="facebook"
-              ><i class="fab fa-twitter"></i></a>
-            </li>
+          <li>
+            <a
+              href="http://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="facebook"
+            ><i class="fab fa-facebook"></i></a>
+          </li>
 
-            <li>
-              <a
-                href="http://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="instagram"
-              ><i class="fab fa-instagram-square"></i></a>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-    </div>
-
+          <li>
+            <a
+              href="http://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="instagram"
+            ><i class="fab fa-instagram-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </footer>
   <!-- ./ footer  -->
 

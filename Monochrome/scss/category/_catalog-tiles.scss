@@ -1,0 +1,31 @@
+.catalog-tiles {
+  display: flex;
+}
+
+.catalog-tile {
+  align-items: center;
+  position: relative;
+
+  img {
+    width: 148px;
+    height: 148px;
+    margin-bottom: 10px;
+  }
+
+  .product-badge {
+    color: $brand-main;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+  }
+
+  .product-title {
+    color: $brand-main;
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+}
+
+.h-img {
+  display: none;
+}

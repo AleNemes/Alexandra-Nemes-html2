@@ -1,0 +1,75 @@
+.header-contact {
+  display: none;
+}
+
+.header-controls {
+  display: flex;
+  flex-wrap: wrap-reverse;
+
+  .user-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    margin-top: 46px;
+
+    .logo {
+      font-size: 20px;
+      color: $brand-main;
+    }
+
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        margin-right: 20px;
+
+        a {
+          color: $brand-main;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+.menu-nav {
+  display: flex;
+  align-items: center;
+  background-color: $brand-main;
+  width: 100%;
+  height: 50px;
+  position: relative;
+
+  input {
+    &[type='text'] {
+      width: 227px;
+      height: 35px;
+      padding: 10px;
+      text-transform: lowercase;
+      background: transparent;
+      border: 1px solid $white;
+      color: $white;
+      font-family: 'Roboto';
+      margin-right: 30px;
+    }
+  }
+
+  button {
+    &[type='submit'] {
+      border: 0;
+      background: transparent;
+      color: $white;
+      position: absolute;
+      right: 50px;
+      bottom: 12px;
+    }
+  }
+
+  .menu-bars {
+    font-size: 28px;
+    color: $white;
+    margin-right: 50px;
+    margin-left: 30px;
+  }
+}
