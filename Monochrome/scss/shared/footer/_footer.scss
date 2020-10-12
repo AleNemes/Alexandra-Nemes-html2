@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  flex-wrap: wrap-reverse;
+  flex-direction: column-reverse;
 
   .footer-info {
     background-color: $gray-secondary;
@@ -13,12 +13,6 @@
       margin-bottom: 41px;
       font-weight: normal;
       text-align: center;
-    }
-
-    ul {
-      &:first-child {
-        display: none;
-      }
     }
   }
 }
