@@ -1,3 +1,29 @@
 .nav {
+  @include media-breakpoint-up('md') {
+    display: block;
+    text-align: center;
+    background-color: $brand-main;
+    height: 52px;
+
+    ul {
+      display: inline-block;
+
+      li {
+        display: inline-block;
+        margin: 12px 150px 0 0;
+
+        a {
+          color: $white;
+          font-size: 20px;
+          text-transform: uppercase;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
   display: none;
 }

@@ -1,4 +1,8 @@
 .banner-main {
+  @include media-breakpoint-up('md') {
+    display: none;
+  }
+
   background: url('/img/banner/banner2.png') no-repeat center center;
   background-size: cover;
   width: 100%;
