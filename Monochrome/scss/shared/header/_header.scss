@@ -30,6 +30,10 @@
         display: inline-block;
 
         a {
+          @include media-breakpoint-up('md') {
+            cursor: pointer;
+          }
+
           color: $white;
           font-size: 16px;
           margin-left: 35px;
@@ -46,14 +50,14 @@
 
   .header-controls {
     @include media-breakpoint-up('md') {
-      display: inline-block;
-      float: right;
-      margin-top: 40px;
-      margin-right: 600px;
+      display: flex;
+      flex-direction: row;
+      margin-left: 600px;
+      margin-top: -45px;
     }
 
     display: flex;
-    flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
 
     .user-control {
       @include media-breakpoint-up('md') {
@@ -74,6 +78,8 @@
       ul {
         @include media-breakpoint-up('md') {
           display: inline-block;
+          margin-left: 45px;
+          margin-top: -35px;
         }
 
         display: inline-block;

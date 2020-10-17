@@ -1,9 +1,11 @@
 .footer {
   @include media-breakpoint-up('md') {
     background-color: $gray-main;
-    min-height: 249px;
+    height: 249px;
+    width: 100%;
     display: flex;
     flex-direction: row;
+    margin-top: 130px;
   }
 
   display: flex;
@@ -12,6 +14,33 @@
   .footer-info {
     @include media-breakpoint-up('md') {
       background-color: transparent;
+
+      .footer-navigation {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+        margin-left: 300px;
+        margin-top: 40px;
+
+        ul {
+          display: block;
+
+          li {
+            display: block;
+            line-height: 37px;
+
+            a {
+              color: $brand-main;
+              font-size: 20px;
+              text-transform: lowercase;
+
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
     }
 
     background-color: $gray-secondary;
@@ -27,19 +56,41 @@
     }
 
     .footer-nav {
+      @include media-breakpoint-up('md') {
+        display: flex;
+        flex-direction: row;
+        text-align: left;
+      }
+
       display: flex;
       flex-direction: row-reverse;
 
       ul {
+        @include media-breakpoint-up('md') {
+          display: inline-block;
+          text-align: left;
+          margin-left: 170px;
+        }
+
         display: block;
         margin: 0 auto;
         text-align: center;
 
         li {
+          @include media-breakpoint-up('md') {
+            line-height: 37px;
+          }
+
           display: block;
           line-height: 40px;
 
           a {
+            @include media-breakpoint-up('md') {
+              color: $brand-main;
+              font-size: 20px;
+              font-family: 'PlayfairDisplay';
+            }
+
             color: $white;
             font-family: 'Roboto';
             font-size: 16px;
@@ -74,6 +125,11 @@
 .footer-subscribe {
   @include media-breakpoint-up('md') {
     background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    max-width: 263px;
+    margin-right: 250px;
+    margin-top: 30px;
   }
 
   background-color: $gray-main;
@@ -96,6 +152,8 @@
     & span {
       @include media-breakpoint-up('md') {
         display: block;
+        font-family: 'PlayfairDisplay';
+        font-size: 22px;
       }
 
       display: none;
@@ -116,10 +174,21 @@
   }
 
   button {
+    @include media-breakpoint-up('md') {
+      margin: 0;
+    }
+
     display: flex;
     margin: 0 auto;
 
     &[type='submit'] {
+      @include media-breakpoint-up('md') {
+        width: 75px;
+        height: 25px;
+        font-size: 12px;
+        padding: 3px 15px;
+      }
+
       border: 1px solid $brand-main;
       background: transparent;
       font-family: 'Roboto';
@@ -140,6 +209,11 @@
 }
 
 .footer-social {
+  @include media-breakpoint-up('md') {
+    text-align: left;
+    margin-top: -20px;
+  }
+
   text-align: center;
 
   p {
