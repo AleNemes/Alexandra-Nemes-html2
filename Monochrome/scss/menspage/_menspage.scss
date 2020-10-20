@@ -1,0 +1,33 @@
+.copy {
+  margin-top: 50px;
+  margin-bottom: 130px;
+
+  h2 {
+    font-size: 35px;
+  }
+
+  p {
+    font-family: 'Roboto';
+    font-weight: 300;
+    line-height: 33px;
+    color: $gray-secondary;
+    font-size: 25px;
+  }
+}
+
+.product-nav {
+  margin-bottom: 48px;
+
+  ul {
+    display: inline-block;
+
+    li {
+      display: inline-block;
+
+      a {
+        padding: 12px 50px;
+        border: 1px solid #ccc;
+      }
+    }
+  }
+}

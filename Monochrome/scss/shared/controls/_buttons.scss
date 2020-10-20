@@ -4,6 +4,13 @@
 }
 
 .catalog-preview-cta {
+  @include media-breakpoint-up('md') {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
   text-decoration: none;
   font-family: 'Roboto';
   color: $brand-main;
