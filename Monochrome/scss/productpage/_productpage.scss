@@ -1,0 +1,158 @@
+.product-info {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+
+  .product-img {
+    display: block;
+    text-align: center;
+
+    .main-image {
+      width: 550px;
+    }
+
+    ul {
+      display: inline-block;
+      margin-top: 20px;
+
+      li {
+        display: inline-block;
+        margin-right: 24px;
+      }
+    }
+
+    p {
+      margin-top: 27px;
+      text-align: center;
+
+      a {
+        color: $brand-main;
+        font-size: 22px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.product-description {
+  width: 435px;
+  margin-right: 130px;
+
+  h3 {
+    font-size: 25px;
+  }
+
+  .hr {
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    margin-top: 10px;
+    width: 435px;
+  }
+
+  .para {
+    font-size: 18px;
+    font-family: 'Roboto';
+    line-height: 22px;
+  }
+
+  .details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      font-size: 20px;
+    }
+
+    a {
+      color: $brand-main;
+      font-size: 12px;
+    }
+  }
+
+  .product-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .add-to-bag {
+      width: 230px;
+
+      .shopping-bag {
+        border: 1px solid #ccc;
+        padding: 12px;
+        color: $brand-main;
+      }
+
+      .add2bag {
+        background-color: $brand-main;
+        color: $white;
+        padding: 11px 20px;
+        text-transform: uppercase;
+        font-family: 'Roboto';
+        font-size: 16px;
+      }
+    }
+  }
+
+  .shipping-info {
+    margin-top: 60px;
+    text-align: center;
+
+    a {
+      color: $brand-main;
+      font-size: 12px;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    .product-social {
+      display: inline-block;
+
+      ul {
+        display: inline-block;
+
+        li {
+          display: inline-block;
+          margin-right: 32px;
+
+          a {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    p {
+      font-family: 'Roboto';
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 22px;
+      width: 100px;
+    }
+
+    a {
+      font-family: 'Roboto';
+      font-size: 18px;
+      text-transform: uppercase;
+      line-height: 22px;
+      width: 100px;
+
+      & span {
+        text-transform: capitalize;
+      }
+    }
+
+    .hr2 {
+      border: 1px solid #ccc;
+      height: 69px;
+    }
+  }
+}
