@@ -15,17 +15,21 @@
   }
 }
 
-.product-nav {
+.sort-nav {
   margin-bottom: 48px;
 
   ul {
-    display: inline-block;
+    display: flex;
+    justify-content: space-between;
 
     li {
       display: inline-block;
+      min-width: 15%;
 
       a {
-        padding: 12px 50px;
+        display: block;
+        text-align: center;
+        padding: 12px 0;
         border: 1px solid #ccc;
         font-size: 16px;
         color: $brand-main;
