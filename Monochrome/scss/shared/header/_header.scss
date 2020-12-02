@@ -1,3 +1,10 @@
+.user-navigation {
+  @include media-breakpoint-up('md') {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .header-contact {
   @include media-breakpoint-up('md') {
     display: inline-block;
@@ -5,7 +12,6 @@
 
     ul {
       display: inline-block;
-      margin-left: 400px;
 
       li {
         display: inline-block;
@@ -40,8 +46,7 @@
   @include media-breakpoint-up('md') {
     display: flex;
     flex-direction: row;
-    margin-left: 600px;
-    margin-top: -55px;
+    margin-top: 30px;
   }
 
   display: flex;

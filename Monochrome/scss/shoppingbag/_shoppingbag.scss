@@ -5,45 +5,6 @@ h1 {
   font-size: 25px;
 }
 
-.list {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15px;
-  margin-bottom: 15px;
-
-  li {
-    font-size: 18px;
-  }
-}
-
-.product-info {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 35px;
-  margin-bottom: 60px;
-
-  h3 {
-    font-size: 18px;
-  }
-
-  p {
-    font-size: 15px;
-    font-family: 'Roboto';
-    font-weight: 500;
-  }
-
-  .quantity {
-    border: 1px solid #ccc;
-    height: 30px;
-
-    i {
-      font-size: 8px;
-      margin: 0 15px;
-    }
-  }
-}
-
 .product-controls {
   display: inline-block;
   margin: 30px 0 30px 880px;
@@ -182,6 +143,7 @@ h1 {
       font-size: 16px;
       font-family: 'Roboto';
       font-weight: 500;
+      max-width: 480px;
     }
 
     .forgot-pass {
@@ -215,12 +177,10 @@ h1 {
       font-size: 20px;
     }
 
-    .radio-input {
+    .radio-group {
       display: flex;
+      flex-direction: row;
       justify-content: center;
-    }
-
-    .radio-label {
       font-family: 'Roboto';
       font-size: 15px;
 
@@ -231,11 +191,16 @@ h1 {
           text-decoration: none;
         }
       }
+
+      .radio-input {
+        margin-right: 10px;
+        margin-top: 3px;
+      }
     }
 
     .btn-register {
-      display: flex;
-      justify-content: center;
+      display: inline-block;
+      text-align: center;
       line-height: 44px;
       padding: 0 36px;
       background-color: $brand-main;
@@ -243,6 +208,8 @@ h1 {
       text-transform: uppercase;
       font-family: 'Roboto';
       border: 0;
+      margin-top: 30px;
+      margin-bottom: 30px;
     }
   }
 
