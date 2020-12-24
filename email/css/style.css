@@ -1,0 +1,40 @@
+body {
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+p {
+  text-align: center;
+  font-weight: 300;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.img-box img {
+  width: 30%;
+}
+
+.link-box {
+  margin-left: 480px;
+}
+
+.link-box .link {
+  text-decoration: none;
+  font-size: 24px;
+  background-color: lightblue;
+  padding: 10px 20px;
+  color: #fff;
+}
